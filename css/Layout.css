@@ -1,0 +1,289 @@
+html {
+    line-height: 0;
+    font-size: 15px;
+    direction: rtl;
+}
+
+body {
+    font-family: "B Nazanin", "Iranian Sans", IRYekan, Tahoma;
+}
+
+/*#region helper*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.clearFix::after {
+    content: '';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+.wide-wrap {
+    max-width: 1920px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/*#endregion helper*/
+
+/*#region header*/
+
+header {
+    z-index: 20;
+}
+
+.header-top {
+    padding: 0.5rem 2.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #cecaca;
+    /* background-color: #c7a98d96; */
+}
+
+.header-top-item {
+    width: 33%;
+}
+
+.header-search {
+    text-align: left;
+}
+
+.header-logo {
+    overflow: hidden;
+    text-align: center;
+}
+
+.header-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+}
+
+.header-button {
+    padding: 0 1rem;
+}
+
+.header-button-icon {
+    font-size: 2rem;
+    color: #5a5454;
+
+    transition: all 300ms;
+    -webkit-transition: all 300ms;
+}
+
+.header-button-icon:hover {
+    color: #c30e0f;
+}
+
+.header-search-form {
+    display: inline-block;
+    color: #5a5454;
+    border-bottom: 1px solid #cecaca;
+    background-color: #fff;
+    direction: ltr;
+    /* border-radius: 2rem; */
+    padding: 0.2rem 1rem;
+}
+
+.header-search-form-input-text {
+    border: none;
+    outline: none;
+    line-height: 3;
+    font-weight: bold;
+}
+
+.header-search-form-input-text::placeholder {
+    color: #000000ec;
+}
+
+.header-search-form-input-submit {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+
+.header-search-form-input-submit-icon {
+    display: inline-block;
+    font-size: 1.5rem;
+    color: #5a5454;
+
+    transition: all 300ms;
+    -webkit-transition: all 300ms;
+}
+
+.header-search-form-input-submit-icon:hover {
+    cursor: pointer;
+    color: #c30e0f;
+}
+
+.header-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-logo-image-wrapper {
+    max-width: 11rem;
+}
+
+.header-logo-image {
+    width: 100%;
+}
+
+/* .header-search-form-input-text:focus .header-search-form {
+    border-bottom: 1px solid #c30e0f;
+} */
+
+/*#endregion header*/
+
+/*#region navbar*/
+
+.nav-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-bottom: 1px solid #cecaca;
+}
+
+.nav-link {
+    text-decoration: none;
+    padding: 0 1rem;
+    position: relative;
+}
+
+.nav-link::after {
+    position: absolute;
+    content: '';
+    top: 100%;
+    right: 0;
+    left: 100%;
+    height: 2px;
+    background-color: #000000ec;
+
+    -webkit-transition: 100ms all;
+    transition: 100ms all;
+}
+
+.nav-link:hover::after {
+    left: 0;
+}
+
+.nav-link-selected .nav-link-text {
+    color: #c30e0f;
+}
+
+.nav-link-selected::after {
+    background-color: #c30e0f;
+}
+
+.nav-link-text {
+    font-size: 1.5rem;
+    line-height: 2;
+    color: #000;
+}
+
+.nav-dropdowns {
+    position: relative;
+}
+
+.nav-dropdown {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    right: 0;
+    visibility: hidden;
+    z-index: 20;
+    list-style-type: none;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.nav-dropdown-item-link {
+    text-decoration: none;
+    color: #000;
+    line-height: 2.5;
+    font-size: 1.3rem;
+}
+
+/*#endregion navbar*/
+
+/*#region footer*/
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 15;
+}
+
+.footer-bottom {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-bottom-item {
+    width: 50%;
+    text-align: center;
+}
+
+.social-media-link {
+    text-decoration: none;
+}
+
+.social-media-icon {
+    color: #5a5454;
+    font-size: 2rem;
+    line-height: 3;
+    padding: 0 2rem;
+
+    -webkit-transition: all 300ms;
+    transition: all 300ms;
+}
+
+.media-phone:hover {
+    color: #0ec344;
+}
+
+.media-telegram:hover {
+    color: #176bcaec;
+}
+
+.media-instagram:hover {
+    color: #c41fbbec;
+}
+
+.creator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.creator-link {
+    text-decoration: none;
+    color: #5a5454;
+    font-weight: bold;
+    font-size: 1.5rem;
+    line-height: 2;
+
+    -webkit-transition: all 300ms;
+    transition: all 300ms;
+}
+
+.creator-link:hover {
+    color: #c30e0f;
+}
+
+/*#endregion footer*/
+

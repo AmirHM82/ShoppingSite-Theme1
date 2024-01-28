@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>چرم تبسم | Home Page</title>
+    <link rel="stylesheet" href="./css/Layout.css">
+    <link rel="stylesheet" href="./css/Home.css">
+    <script src="https://kit.fontawesome.com/b1957cc144.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-top">
+            <div class="header-top-item header-buttons">
+                <a href="#" class="header-button profile">
+                    <i class="header-button-icon fa-solid fa-circle-user"></i>
+                </a>
+                <a href="#" class="header-button shop-card">
+                    <i class="header-button-icon fa-solid fa-cart-shopping"></i>
+                </a>
+            </div>
+            <div class="header-top-item header-logo">
+                <div class="header-logo-image-wrapper">
+                    <img class="header-logo-image" src="./img/logo.jpg" />
+                </div>
+            </div>
+            <div class="header-top-item header-search">
+                <form class="header-search-form">
+                    <input type="search" placeholder="SEARCH..." class="header-search-form-input-text" />
+                    <input type="submit" id="searchSubmition" class="header-search-form-input-submit" />
+                    <i for="searchSubmition"
+                        class="header-search-form-input-submit-icon fa-solid fa-magnifying-glass"></i>
+                </form>
+            </div>
+        </div>
+        <nav>
+            <div class="nav-buttons">
+                <span class="nav-link nav-link-selected" href="#">
+                    <a class="nav-link-text">خانه</a>
+                </span>
+                <span class="nav-link" href="#" onmouseover="ShowNav(0)" onmouseout="HideNav(0)">
+                    <a class="nav-link-text">محصولات</a>
+                </span>
+            </div>
+            <div class="nav-dropdowns">
+                <ul class="nav-dropdown">
+                    <li class="nav-dropdown-item">
+                        <a href="" class="nav-dropdown-item-link">گردن بند</a>
+                    </li>
+                    <li class="nav-dropdown-item">
+                        <a href="" class="nav-dropdown-item-link">دست بند</a>
+                    </li>
+                    <li class="nav-dropdown-item">
+                        <a href="" class="nav-dropdown-item-link">کیف</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="wide-wrap">
+            <div class="slider">
+                <button class="left-pointer slider-pointer" onclick="move(-1)">
+                    <i class="pointer-icon fa-solid fa-chevron-left"></i>
+                </button>
+                <ul class="slider-images">
+                    <li class="slider-image-wrap">
+                        <img src="img/slider1.webp" class="slider-image" />
+                    </li>
+                    <li class="slider-image-wrap">
+                        <img src="img/slider2.webp" class="slider-image" />
+                    </li>
+                    <li class="slider-image-wrap">
+                        <img src="img/slider3.webp" class="slider-image" />
+                    </li>
+                </ul>
+                <div class="slider-pagination">
+                    <button class="pagination-icon-btn">
+                        <i class="pagination-icon fa-solid fa-circle"></i>
+                    </button>
+                    <button class="pagination-icon-btn">
+                        <i class="pagination-icon fa-regular fa-circle"></i>
+                    </button>
+                </div>
+                <button class="right-pointer slider-pointer" onclick="move(1)">
+                    <i class="pointer-icon fa-solid fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-bottom">
+            <div class="footer-bottom-item social-medias">
+                <a href="#" class="social-media-link">
+                    <i class="social-media-icon fa-solid fa-phone media-phone"></i>
+                </a>
+                <a href="#" class="social-media-link">
+                    <i class="social-media-icon fa-brands fa-telegram media-telegram"></i>
+                </a>
+                <a href="#" class="social-media-link">
+                    <i class="social-media-icon fa-brands fa-instagram media-instagram"></i>
+                </a>
+            </div>
+            <div class="footer-bottom-item creator">
+                <a href="#" class="creator-link">Site by AmirHM82</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
+
+<script>
+    let sliderPos = 0;
+
+    move(0)
+
+    function move(n) {
+        var slides = document.getElementsByClassName('slider-image-wrap');
+        if (sliderPos >= 0 && sliderPos < slides.length && sliderPos + n >= 0 && sliderPos + n < slides.length) {
+            slides[sliderPos].style.width = '0';
+            sliderPos += n;
+            slides[sliderPos].style.width = '100%';
+        }
+    }
+
+    function ShowNav(n) {
+        var navs = document.getElementsByClassName('nav-dropdown');
+        navs[n].style.height = 'auto';
+        navs[n].style.visibility = 'visible';
+    }
+
+    function HideNav(n) {
+        var navs = document.getElementsByClassName('nav-dropdown');
+        navs[n].style.height = '0';
+        navs[n].style.visibility = 'hidden';
+    }
+</script>
