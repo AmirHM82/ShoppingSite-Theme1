@@ -206,14 +206,32 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding: 1rem;
+    align-items: top;
+}
+
+.nav-dropdown-item {
+    padding: 0 1rem;
 }
 
 .nav-dropdown-item-link {
+    display: block;
     text-decoration: none;
     color: #000;
     line-height: 2.5;
     font-size: 1.3rem;
+    text-align: center;
+
+    transition: color 500ms;
+    -webkit-transition: color 500ms;
+}
+
+.nav-dropdown-item-link-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-dropdown-item-link:hover {
+    color: #c30e0f;
 }
 
 /*#endregion navbar*/
