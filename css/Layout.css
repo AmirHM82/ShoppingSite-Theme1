@@ -25,7 +25,7 @@ body {
 }
 
 .wide-wrap {
-    max-width: 1920px;
+    max-width: 1500px;
     margin-right: auto;
     margin-left: auto;
 }
@@ -244,6 +244,7 @@ footer {
     bottom: 0;
     right: 0;
     z-index: 15;
+    background-color: #fff;
 }
 
 .footer-bottom {

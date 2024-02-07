@@ -64,34 +64,54 @@
         </nav>
     </header>
     <main>
-        <div class="wide-wrap">
-            <div class="slider">
-                <button class="left-pointer slider-pointer" onclick="move(-1)">
-                    <i class="pointer-icon fa-solid fa-chevron-left"></i>
+        <div class="slider">
+            <button class="left-pointer slider-pointer" onclick="move(-1)">
+                <i class="pointer-icon fa-solid fa-chevron-left"></i>
+            </button>
+            <ul class="slider-images">
+                <li class="slider-image-wrap">
+                    <img src="img/slider1.webp" class="slider-image" />
+                </li>
+                <li class="slider-image-wrap">
+                    <img src="img/slider2.webp" class="slider-image" />
+                </li>
+                <li class="slider-image-wrap">
+                    <img src="img/slider3.webp" class="slider-image" />
+                </li>
+            </ul>
+            <div class="slider-pagination">
+                <button class="pagination-icon-btn">
+                    <i class="pagination-icon fa-solid fa-circle"></i>
                 </button>
-                <ul class="slider-images">
-                    <li class="slider-image-wrap">
-                        <img src="img/slider1.webp" class="slider-image" />
-                    </li>
-                    <li class="slider-image-wrap">
-                        <img src="img/slider2.webp" class="slider-image" />
-                    </li>
-                    <li class="slider-image-wrap">
-                        <img src="img/slider3.webp" class="slider-image" />
-                    </li>
-                </ul>
-                <div class="slider-pagination">
-                    <button class="pagination-icon-btn">
-                        <i class="pagination-icon fa-solid fa-circle"></i>
-                    </button>
-                    <button class="pagination-icon-btn">
-                        <i class="pagination-icon fa-regular fa-circle"></i>
-                    </button>
-                </div>
-                <button class="right-pointer slider-pointer" onclick="move(1)">
-                    <i class="pointer-icon fa-solid fa-chevron-right"></i>
+                <button class="pagination-icon-btn">
+                    <i class="pagination-icon fa-regular fa-circle"></i>
                 </button>
             </div>
+            <button class="right-pointer slider-pointer" onclick="move(1)">
+                <i class="pointer-icon fa-solid fa-chevron-right"></i>
+            </button>
+        </div>
+        <div class="wide-wrap">
+            <ul class="products-samples-mode1">
+                <li class="product-sample-1">
+                    <a href="#" class="product-sample-1-link">
+                        <img src="img/product show cases/product1.webp" class="product-sample-1-img" />
+                        <span class="product-sample-1-text">کیف 1</span>
+                    </a>
+                </li>
+                <li class="product-sample-2">
+                    <a href="#" class="product-sample-1-link">
+                        <img src="img/product show cases/product2-1.webp" class="product-sample-1-img" />
+                        <span class="product-sample-1-text">کیف 2</span>
+                    </a>
+                </li>
+                <li class="product-sample-2">
+                    <a href="#" class="product-sample-1-link">
+                        <img src="img/product show cases/product3-1.webp" class="product-sample-1-img" />
+                        <span class="product-sample-1-text">کیف 3</span>
+                    </a>
+                </li>
+            </ul>
         </div>
     </main>
     <footer>
