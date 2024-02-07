@@ -117,14 +117,29 @@
     text-align: center;
 }
 
+.product-sample-1-img-wrap {
+    overflow: hidden;
+}
+
 .product-sample-1-img {
     width: 100%;
+
+    transition: all 500ms;
+    -webkit-transition: all 500ms;
 }
 
 .product-sample-1-text {
     display: block;
     line-height: 2;
     font-size: 2rem;
+}
+
+.product-sample-1-link:hover {
+    color: #c30e0f;
+}
+
+.product-sample-1-link:hover .product-sample-1-img {
+    transform: scale(1.2);
 }
 
 /*#endregion product show cases*/
