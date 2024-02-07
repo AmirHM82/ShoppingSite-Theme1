@@ -5,6 +5,7 @@ html {
 }
 
 body {
+    position: relative;
     font-family: "B Nazanin", "Iranian Sans", IRYekan, Tahoma;
 }
 
@@ -236,11 +237,17 @@ header {
 
 /*#endregion navbar*/
 
+/*#region main*/
+main {
+    padding-bottom: 5rem;
+}
+/*#endrehion main*/
+
 /*#region footer*/
 
 footer {
-    position: fixed;
-    left: 0;
+    position: absolute;
+    width: 100%;
     bottom: 0;
     right: 0;
     z-index: 15;

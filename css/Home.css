@@ -95,7 +95,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding:  5rem 0;
+    margin:  5rem 0;
 }
 
 .product-sample-1 {
@@ -112,7 +112,7 @@
 
 .product-sample-1-link {
     display: block;
-    color: #000;
+    color: #000000bd;
     text-decoration: none;
     text-align: center;
 }
@@ -140,6 +140,29 @@
 
 .product-sample-1-link:hover .product-sample-1-img {
     transform: scale(1.2);
+}
+
+.product-sample-1-price-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    line-height: 1.2;
+    font-size: 1.5rem;
+    color: #000;
+}
+
+.product-sample-1-prev-price {
+    text-decoration: line-through;
+    padding: 0 1rem;
+}
+
+.product-sample-1-offered-price {
+    font-weight: bold;
+    padding: 0 1rem;
+}
+
+.product-sample-1-price {
+    font-weight: bold;
 }
 
 /*#endregion product show cases*/
