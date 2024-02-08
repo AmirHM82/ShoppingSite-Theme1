@@ -179,6 +179,7 @@ header {
 
 .nav-link-selected .nav-link-text {
     color: #c30e0f;
+    text-decoration: none;
 }
 
 .nav-link-selected::after {
@@ -241,6 +242,94 @@ header {
 main {
     padding-bottom: 5rem;
 }
+
+/*#region slider*/
+
+.slider {
+    position: relative;
+    overflow: hidden;
+}
+
+.slider:hover .slider-pointer {
+    visibility: visible;
+}
+
+.slider:hover .left-pointer {
+    left: 0;
+}
+
+.slider:hover .right-pointer {
+    right: 0;
+}
+
+.slider-pointer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    visibility: hidden;
+    width: 4rem;
+    background-color: rgba(0, 0, 0, 0.3);
+    border: none;
+    cursor: pointer;
+
+    -webkit-transition: all 300ms;
+    transition: all 300ms;
+}
+
+.left-pointer {
+    left: -4rem;
+}
+
+.right-pointer {
+    right: -4rem;
+}
+
+.slider-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 1.5rem;
+    left: 0;
+    right: 0;
+}
+
+.pagination-icon-btn {
+    background-color: transparent;
+    border: none;
+
+    line-height: 3;
+    font-size: 0.7rem;
+    padding: 0 0.2rem;
+    color: #fff;
+}
+
+.pointer-icon {
+    color: #fff;
+    font-size: 2.5rem;
+}
+
+.slider-images {
+    display: flex;
+    align-items: center;
+}
+
+.slider-image-wrap {
+    display: block;
+    width: 0;
+    transition: all 500ms;
+    -webkit-transition: all 500ms;
+}
+
+.slider-image {
+    width: 100%;
+}
+
+/*#endregion slider*/
+
 /*#endrehion main*/
 
 /*#region footer*/
@@ -252,6 +341,7 @@ footer {
     right: 0;
     z-index: 15;
     background-color: #fff;
+    border-top: 1px solid #cecaca;
 }
 
 .footer-bottom {
@@ -271,7 +361,7 @@ footer {
 .social-media-icon {
     color: #5a5454;
     font-size: 2rem;
-    line-height: 3;
+    line-height: 3 !important;
     padding: 0 2rem;
 
     -webkit-transition: all 300ms;
