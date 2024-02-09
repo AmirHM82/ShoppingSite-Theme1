@@ -243,6 +243,38 @@ main {
     padding-bottom: 5rem;
 }
 
+/*region addressBar*/
+.address-bar {
+    margin: 0 4rem;
+    line-height: 2;
+    direction: ltr;
+    font-weight: bold;
+}
+
+.address-bar-item {
+    display: inline-block;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #000000bd;
+}
+
+.address-bar-space {
+    display: inline-block;
+    font-size: 2rem;
+    color: #000000bd;
+    padding: 0 1rem;
+}
+
+.address-bar-item:hover {
+    text-decoration: underline;
+}
+
+.address-bar-item:last-child:hover {
+    text-decoration: none;
+}
+
+/*endregion addressBar*/
+
 /*#region slider*/
 
 .slider {

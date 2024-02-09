@@ -64,41 +64,17 @@
         </nav>
     </header>
     <main>
-        <div class="slider">
-            <button class="left-pointer slider-pointer" onclick="move(-1)">
-                <i class="pointer-icon fa-solid fa-chevron-left"></i>
-            </button>
-            <ul class="slider-images">
-                <li class="slider-image-wrap">
-                    <img src="img/slider1.webp" class="slider-image" />
-                </li>
-                <li class="slider-image-wrap">
-                    <img src="img/slider2.webp" class="slider-image" />
-                </li>
-                <li class="slider-image-wrap">
-                    <img src="img/slider3.webp" class="slider-image" />
-                </li>
-            </ul>
-            <div class="slider-pagination">
-                <button class="pagination-icon-btn">
-                    <i class="pagination-icon fa-solid fa-circle"></i>
-                </button>
-                <button class="pagination-icon-btn">
-                    <i class="pagination-icon fa-regular fa-circle"></i>
-                </button>
-            </div>
-            <button class="right-pointer slider-pointer" onclick="move(1)">
-                <i class="pointer-icon fa-solid fa-chevron-right"></i>
-            </button>
-        </div>
         <div class="address-bar">
-            <a href="Home.html" class="address-bar-item">Home</a>
+            <!-- <a href="Home.html" class="address-bar-item">Home</a>
             <span class="address-bar-space">/</span>
-            <a class="address-bar-item">Products</a>
+            <a class="address-bar-item">Products</a> -->
         </div>
         <section class="products-section">
-            <div class="products-filters"></div>
+            <!-- <div class="products-filters"></div> -->
             <div class="products-list-wrap">
+                <div class="products-list-text">
+                    <span class="products-list-title">محصولات</span>
+                </div>
                 <ul class="products-list">
                     <li class="products-list-item">
                         <a href="" class="products-list-item-link">
@@ -127,7 +103,97 @@
                             </div>
                         </a>
                     </li>
+                    <li class="products-list-item">
+                        <a href="" class="products-list-item-link">
+                            <div class="products-list-item-img-wrap">
+                                <img class="products-list-item-img" src="img/product show cases/product2-2.jpg" />
+                            </div>
+                            <div class="products-list-item-texts">
+                                <span class="products-list-item-texts-desc">توضیحات محصول</span>
+                                <div class="products-list-item-texts-price-wrap">
+                                    <span class="products-list-item-texts-price">30$</span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="products-list-item">
+                        <a href="" class="products-list-item-link">
+                            <div class="products-list-item-img-wrap">
+                                <img class="products-list-item-img" src="img/product show cases/product3-2.webp" />
+                            </div>
+                            <div class="products-list-item-texts">
+                                <span class="products-list-item-texts-desc">توضیحات محصول</span>
+                                <div class="products-list-item-texts-price-wrap">
+                                    <span class="products-list-item-texts-prev-price">35$</span>
+                                    <span class="products-list-item-texts-offered-price">20$</span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="products-list-item">
+                        <a href="" class="products-list-item-link">
+                            <div class="products-list-item-img-wrap">
+                                <img class="products-list-item-img" src="img/product show cases/product2-2.jpg" />
+                            </div>
+                            <div class="products-list-item-texts">
+                                <span class="products-list-item-texts-desc">توضیحات محصول</span>
+                                <div class="products-list-item-texts-price-wrap">
+                                    <span class="products-list-item-texts-price">30$</span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="products-list-item">
+                        <a href="" class="products-list-item-link">
+                            <div class="products-list-item-img-wrap">
+                                <img class="products-list-item-img" src="img/product show cases/product3-2.webp" />
+                            </div>
+                            <div class="products-list-item-texts">
+                                <span class="products-list-item-texts-desc">توضیحات محصول</span>
+                                <div class="products-list-item-texts-price-wrap">
+                                    <span class="products-list-item-texts-prev-price">35$</span>
+                                    <span class="products-list-item-texts-offered-price">20$</span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="products-list-item">
+                        <a href="" class="products-list-item-link">
+                            <div class="products-list-item-img-wrap">
+                                <img class="products-list-item-img" src="img/product show cases/product2-2.jpg" />
+                            </div>
+                            <div class="products-list-item-texts">
+                                <span class="products-list-item-texts-desc">توضیحات محصول</span>
+                                <div class="products-list-item-texts-price-wrap">
+                                    <span class="products-list-item-texts-price">30$</span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="products-list-item">
+                        <a href="" class="products-list-item-link">
+                            <div class="products-list-item-img-wrap">
+                                <img class="products-list-item-img" src="img/product show cases/product3-2.webp" />
+                            </div>
+                            <div class="products-list-item-texts">
+                                <span class="products-list-item-texts-desc">توضیحات محصول</span>
+                                <div class="products-list-item-texts-price-wrap">
+                                    <span class="products-list-item-texts-prev-price">35$</span>
+                                    <span class="products-list-item-texts-offered-price">20$</span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
                 </ul>
+                <div class="products-list-pagination-wrap">
+                    <a id="leftBtn" class="products-list-pagination left-pagination">
+                        <i class="products-list-pagination-icon left-pagination-icon fa-solid fa-chevron-left"></i>
+                    </a>
+                    <div class="products-list-pagination-text">صفحه 1/1</div>
+                    <a id="rightBtn" class="products-list-pagination right-pagination">
+                        <i class="products-list-pagination-icon right-pagination-icon fa-solid fa-chevron-right"></i>
+                    </a>
+                </div>
             </div>
         </section>
     </main>
@@ -153,29 +219,7 @@
 
 </html>
 
-<script>
-    let sliderPos = 0;
-
-    move(0)
-
-    function move(n) {
-        var slides = document.getElementsByClassName('slider-image-wrap');
-        if (sliderPos >= 0 && sliderPos < slides.length && sliderPos + n >= 0 && sliderPos + n < slides.length) {
-            slides[sliderPos].style.width = '0';
-            sliderPos += n;
-            slides[sliderPos].style.width = '100%';
-        }
-    }
-
-    function ShowNav(n) {
-        var navs = document.getElementsByClassName('nav-dropdown');
-        navs[n].style.height = 'auto';
-        navs[n].style.visibility = 'visible';
-    }
-
-    function HideNav(n) {
-        var navs = document.getElementsByClassName('nav-dropdown');
-        navs[n].style.height = '0';
-        navs[n].style.visibility = 'hidden';
-    }
-</script>
+<script src="js/ProductPagination.js"></script>
+<script src="js/Slider.js"></script>
+<script src="js/Navbar.js"></script>
+<script src="js/Addressbar.js"></script>
