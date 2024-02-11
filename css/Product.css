@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
-    padding: 2rem;
+    padding: 0 1rem;
 }
 
 .Product-imgs-wrap {
@@ -35,8 +35,9 @@
 }
 
 .Product-content-text {
-    line-height: 3;
+    line-height: 2;
     font-size: 2rem;
+    font-weight: bold;
 }
 
 .Product-content-price-wrap {
@@ -114,8 +115,11 @@
 
 .Product-content-prev-price {
     padding: 0 1rem;
+    text-decoration: line-through;
+    color: #000000bd;
 }
 
 .Product-content-offered-price {
     padding: 0 1rem;
+    font-weight: bold;
 }

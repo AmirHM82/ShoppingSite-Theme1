@@ -240,7 +240,7 @@ header {
 
 /*#region main*/
 main {
-    padding-bottom: 5rem;
+    padding-bottom: 7rem;
 }
 
 /*region addressBar*/
@@ -253,14 +253,14 @@ main {
 
 .address-bar-item {
     display: inline-block;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     text-decoration: none;
     color: #000000bd;
 }
 
 .address-bar-space {
     display: inline-block;
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: #000000bd;
     padding: 0 1rem;
 }

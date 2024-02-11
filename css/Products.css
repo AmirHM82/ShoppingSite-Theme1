@@ -10,7 +10,7 @@
 
 .products-list-wrap {
     /* width: 80%; */
-    padding: 2rem;
+    padding: 0 2rem;
 }
 
 .products-list-text {
@@ -23,6 +23,7 @@
     line-height: 3rem;
     font-weight: bold;
     margin-right: 0.5rem;
+    color: #000000bd;
 }
 
 .products-list {
@@ -81,6 +82,7 @@
 .products-list-item-texts-prev-price {
     text-decoration: line-through;
     padding: 0 1rem;
+    color: #000000bd;
 }
 
 .products-list-item-texts-offered-price {
