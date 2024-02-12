@@ -64,23 +64,49 @@
         </nav>
     </header>
     <main>
-        <section class="signin-wrap wide-wrap">
-            <div class="signin-title">ورود به حساب کاربری</div>
-            <form class="signin-form">
-                <div class="signin-form-input-text-wrap">
-                    <span class="signin-form-text">شماره موبایل</span>
-                    <input type="text" class="signin-form-input-text" placeholder="شماره موبایل خود را وارد کنید ..." />
+        <div class="wide-wrap main-signin">
+            <section class="signin-wrap">
+                <div class="signin-title">ورود به حساب کاربری</div>
+                <form class="signin-form">
+                    <div class="signin-form-input-text-wrap">
+                        <span class="signin-form-text">شماره موبایل</span>
+                        <input type="text" class="signin-form-input-text"
+                            placeholder="شماره موبایل خود را وارد کنید ..." />
+                    </div>
+                    <div class="signin-form-input-text-wrap">
+                        <span class="signin-form-text">رمز</span>
+                        <input type="text" class="signin-form-input-text" placeholder="رمز خود را وارد کنید ..." />
+                    </div>
+                    <div class="signin-form-input-submit-wrap">
+                        <a href="#" class="signin-form-text signin-form-resetPass signin-form-btn">فراموشی رمز</a>
+                        <input value="ورود" type="submit" class="signin-form-input-submit signin-form-btn" />
+                    </div>
+                </form>
+            </section>
+            <section class="miniSlider-wrap">
+                <div class="slider">
+                    <ul class="slider-images">
+                        <li class="slider-image-wrap slider-visible">
+                            <img src="img/slider1.webp" class="slider-image" />
+                        </li>
+                        <li class="slider-image-wrap slider-hidden">
+                            <img src="img/slider2.webp" class="slider-image" />
+                        </li>
+                        <li class="slider-image-wrap slider-hidden">
+                            <img src="img/slider3.webp" class="slider-image" />
+                        </li>
+                    </ul>
+                    <div class="slider-pagination">
+                        <button class="pagination-icon-btn">
+                            <i class="pagination-icon fa-solid fa-circle"></i>
+                        </button>
+                        <button class="pagination-icon-btn">
+                            <i class="pagination-icon fa-regular fa-circle"></i>
+                        </button>
+                    </div>
                 </div>
-                <div class="signin-form-input-text-wrap">
-                    <span class="signin-form-text">رمز</span>
-                    <input type="text" class="signin-form-input-text" placeholder="رمز خود را وارد کنید ..." />
-                </div>
-                <div class="signin-form-input-submit-wrap">
-                    <a href="#" class="signin-form-text signin-form-resetPass signin-form-btn">فراموشی رمز</a>
-                    <input value="ورود" type="submit" class="signin-form-input-submit signin-form-btn" />
-                </div>
-            </form>
-        </section>
+            </section>
+        </div>
     </main>
     <footer>
         <div class="footer-bottom">
@@ -105,3 +131,4 @@
 </html>
 
 <script src="js/Navbar.js"></script>
+<script src="js/MiniSlider.js"></script>

@@ -1,4 +1,13 @@
+.main-signin {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+}
+
 .signin-wrap {
+    width: 35%;
     line-height: 2;
     font-size: 1.5rem;
 }
@@ -19,7 +28,7 @@
 .signin-form-input-text {
     line-height: 2;
     font-size: 1.1rem;
-    width: 20%;
+    width: 25rem;
     padding: 0 1rem;
     border-radius: 0.5rem;
     border: solid 1px #0000007a;
@@ -66,3 +75,65 @@
     background-color: #fff;
     color: #383d5ab4;
 }
+
+/*#region minislider*/
+
+.miniSlider-wrap {
+    width: 65%;
+}
+
+.slider {
+    position: relative;
+    overflow: hidden;
+}
+
+.slider-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 1.5rem;
+    left: 0;
+    right: 0;
+}
+
+.pagination-icon-btn {
+    background-color: transparent;
+    border: none;
+
+    line-height: 3;
+    font-size: 0.7rem;
+    padding: 0 0.2rem;
+    color: #fff;
+}
+
+.pointer-icon {
+    color: #fff;
+    font-size: 2.5rem;
+}
+
+.slider-images {
+    display: flex;
+    align-items: center;
+}
+
+.slider-image-wrap {
+    display: block;
+    
+    transition: all 500ms;
+    -webkit-transition: all 500ms;
+}
+
+.slider-image {
+    display: block;
+}
+
+.slider-visible {
+    width: 100%;
+}
+
+.slider-hidden {
+    width: 0;
+}
+
+/*#endregion minislider*/
