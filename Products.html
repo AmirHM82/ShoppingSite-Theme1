@@ -30,9 +30,9 @@
                 </div>
             </div>
             <div class="header-top-item header-search">
-                <form class="header-search-form" action="./Search.html">
+                <form class="header-search-form" action="./Products.html">
                     <input type="search" placeholder="عبارت جستجوی خود را وارد کنید ..."
-                        class="header-search-form-input-text" name="search" />
+                        class="header-search-form-input-text" name="search" id="searchInput" />
                     <div class="header-search-btn-wrap">
                         <input type="submit" id="searchSubmition" class="header-search-form-input-submit" />
                         <i for="searchSubmition"
@@ -79,7 +79,7 @@
             <!-- <div class="products-filters"></div> -->
             <div class="products-list-wrap">
                 <div class="products-list-text">
-                    <span class="products-list-title">محصولات</span>
+                    <span class="products-list-title" id="products-title">محصولات</span>
                 </div>
                 <ul class="products-list">
                     <li class="products-list-item">
@@ -195,7 +195,7 @@
                     <a id="leftBtn" class="products-list-pagination left-pagination">
                         <i class="products-list-pagination-icon left-pagination-icon fa-solid fa-chevron-left"></i>
                     </a>
-                    <div class="products-list-pagination-text">صفحه 1/1</div>
+                    <div class="products-list-pagination-text" id="page-counter">صفحه 1/1</div>
                     <a id="rightBtn" class="products-list-pagination right-pagination">
                         <i class="products-list-pagination-icon right-pagination-icon fa-solid fa-chevron-right"></i>
                     </a>
@@ -226,6 +226,5 @@
 </html>
 
 <script src="js/ProductPagination.js"></script>
-<script src="js/Slider.js"></script>
 <script src="js/Navbar.js"></script>
 <script src="js/Addressbar.js"></script>
