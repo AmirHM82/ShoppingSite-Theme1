@@ -89,6 +89,10 @@
 
 /*region product show cases*/
 
+.products-samples-wrap {
+    padding: 0 2rem;
+}
+
 .products-samples-mode1 {
     list-style-type: none;
     display: flex;

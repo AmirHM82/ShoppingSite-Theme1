@@ -288,8 +288,20 @@ footer {
     bottom: 0;
     right: 0; */
     margin-top: auto;
-    z-index: 15;
+    /* z-index: 15; */
     background-color: #fff;
+
+    /* background-image: url(../img/footer.jpg);
+    background-repeat: no-repeat;
+    background-clip: border-box;
+    background-origin: content-box;
+    background-position: center;
+    background-size: cover;
+    height: 500px; */
+
+    /* background-attachment: fixed; */
+    /* background-size: auto; */
+
     border-top: 1px solid #cecaca;
 }
 
