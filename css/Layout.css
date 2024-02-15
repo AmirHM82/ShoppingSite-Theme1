@@ -92,7 +92,6 @@ header {
     color: #5a5454;
     border-bottom: 1px solid #cecaca;
     background-color: #fff;
-    direction: ltr;
     /* border-radius: 2rem; */
     padding: 0.2rem 1rem;
 }
@@ -100,7 +99,8 @@ header {
 .header-search-form-input-text {
     border: none;
     outline: none;
-    line-height: 3;
+    line-height: 2;
+    font-size: 1.1rem;
     font-weight: bold;
 }
 
@@ -109,9 +109,15 @@ header {
 }
 
 .header-search-form-input-submit {
-    visibility: hidden;
-    width: 0;
-    height: 0;
+    /* visibility: hidden; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    cursor: pointer;
+    border: none;
 }
 
 .header-search-form-input-submit-icon {
@@ -140,6 +146,11 @@ header {
 
 .header-logo-image {
     width: 100%;
+}
+
+.header-search-btn-wrap {
+    display: inline-block;
+    position: relative;
 }
 
 /* .header-search-form-input-text:focus .header-search-form {
