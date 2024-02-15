@@ -25,10 +25,10 @@ var rightBtn = document.getElementById('rightBtn');
 let nextPage = page + 1;
 let previousPage = page - 1;
 
-let href = './' + lastPath;
+let phref = './' + lastPath;
 
 if (searchParam != null) {
-    href += '?search=' + searchParam;
+    phref += '?search=' + searchParam;
     var searchInput = document.getElementById('searchInput');
     searchInput.value = searchParam;
     var titleElemtn = document.getElementById('products-title');
@@ -36,11 +36,11 @@ if (searchParam != null) {
 }
 
 if (previousPage > 0) {
-    href += '&Page=' + previousPage;
+    phref += '&Page=' + previousPage;
     
-    leftBtn.href = href;
+    leftBtn.phref = phref;
 }
 if (nextPage <= maxPage) {
-    href += '&Page=' + nextPage;
-    rightBtn.href = href;
+    phref += '&Page=' + nextPage;
+    rightBtn.phref = phref;
 }
