@@ -1,6 +1,7 @@
 window.setInterval(changeSlider, 2000);
 
 let turn = 0;
+let turnRate = 1;
 function changeSlider() {
     var imgs = document.getElementsByClassName('slider-image-wrap');
     var icons = document.getElementsByClassName('pagination-icon');
@@ -15,10 +16,13 @@ function changeSlider() {
         imgs[turn].classList.add('slider-hidden');
     }
 
-    turn += 1;
+    turn += turnRate;
 
-    if (turn > (imgs.length - 1)) {
-        turn = 0;
+    if (turn >= (imgs.length - 1)) {
+        turnRate = -1;
+    }
+    else if (turn <= 0) {
+        turnRate = 1;
     }
 
     if (icons[turn].classList.contains('fa-regular')) {
