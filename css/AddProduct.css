@@ -31,9 +31,13 @@
     box-shadow: 2px 2px #00000059;
 }
 
-.input-text, .input-file, .input-submit {
+.input-text, .input-file, .input-submit, .input-dropdown {
     line-height: 1.8rem !important;
     font-size: 1.1rem !important;
+}
+
+.input-dropdown {
+    direction: rtl !important;
 }
 
 .input-text {

@@ -5,6 +5,7 @@
 .slider {
     position: relative;
     overflow: hidden;
+    direction: ltr;
 }
 
 .slider:hover .slider-pointer {
@@ -72,6 +73,7 @@
 .slider-images {
     display: flex;
     align-items: center;
+    direction: rtl;
 }
 
 .slider-image-wrap {
