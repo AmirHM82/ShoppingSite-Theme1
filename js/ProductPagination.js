@@ -4,11 +4,7 @@ const urlParams = new URLSearchParams(window.location.search);
 
 const searchParam = urlParams.get('search');
 
-const maxPageStr = urlParams.get('MaxPage');
-let maxPage = 2;
-if (maxPageStr != null) {
-    maxPage = parseInt(maxPageStr);
-}
+let maxPage = parseInt(document.getElementById('maxPage').innerHTML);
 
 const pageStr = urlParams.get('Page');
 let page = 1;
