@@ -27,20 +27,20 @@ let previousPage = page - 1;
 
 let phref = './' + lastPath;
 
-if (searchParam != null) {
-    phref += '?search=' + searchParam;
-    var searchInput = document.getElementById('searchInput');
-    searchInput.value = searchParam;
-    var titleElemtn = document.getElementById('products-title');
-    titleElemtn.innerHTML = 'نتایج جستجو برای ' + searchParam;
-}
-
 if (previousPage > 0) {
-    phref += '&Page=' + previousPage;
+    phref += '?Page=' + previousPage;
     
     leftBtn.href = phref;
 }
 if (nextPage <= maxPage) {
-    phref += '&Page=' + nextPage;
+    phref += '?Page=' + nextPage;
     rightBtn.href = phref;
+}
+
+if (searchParam != null) {
+    phref += '&search=' + searchParam;
+    var searchInput = document.getElementById('searchInput');
+    searchInput.value = searchParam;
+    var titleElemtn = document.getElementById('products-title');
+    titleElemtn.innerHTML = 'نتایج جستجو برای ' + searchParam;
 }
