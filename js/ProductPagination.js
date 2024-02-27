@@ -38,9 +38,9 @@ if (searchParam != null) {
 if (previousPage > 0) {
     phref += '&Page=' + previousPage;
     
-    leftBtn.phref = phref;
+    leftBtn.href = phref;
 }
 if (nextPage <= maxPage) {
     phref += '&Page=' + nextPage;
-    rightBtn.phref = phref;
+    rightBtn.href = phref;
 }
