@@ -21,14 +21,15 @@ var rightBtn = document.getElementById('rightBtn');
 let nextPage = page + 1;
 let previousPage = page - 1;
 
-let phref = './' + lastPath;
+let phref = '';
 
 if (previousPage > 0) {
+    phref = './' + lastPath;
     phref += '?Page=' + previousPage;
-    
     leftBtn.href = phref;
 }
 if (nextPage <= maxPage) {
+    phref = './' + lastPath;
     phref += '?Page=' + nextPage;
     rightBtn.href = phref;
 }
